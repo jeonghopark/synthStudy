@@ -1,0 +1,14 @@
+#Ignore everything
+*/*
+/**/bin/data
+/**/src
+
+
+#Whitelist subdirectories
+!FM_01/src
+!FM_01/bin/data
+
+
+#Whitelist the gitignore itself
+!.gitignore
+
