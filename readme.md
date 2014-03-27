@@ -8,4 +8,5 @@ required
 - Accelerate.Framework  
 ![accelerate.png](document/accelerate.png)
 
+Mac Version.
 

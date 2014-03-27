@@ -54,11 +54,9 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    
     keyBoardDraw();
     
     if (bGuiDraw) gui.draw();
-    
     
 }
 
