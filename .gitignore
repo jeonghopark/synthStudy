@@ -3,8 +3,8 @@
 /**/bin/data
 /**/src
 
-
 #Whitelist subdirectories
+!document/*
 !FM_01/src
 !FM_01/bin/data
 
@@ -12,3 +12,5 @@
 #Whitelist the gitignore itself
 !.gitignore
 
+*.mov
+*.icns
