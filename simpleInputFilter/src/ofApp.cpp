@@ -11,13 +11,13 @@ void ofApp::setup(){
     RingBuffer _inputS;
     inputBuffer = RingBufferWriter("_inputS", 256, 4);
     RingBufferReader inputReader = RingBufferReader().bufferName("_inputS");
-    
+
     LPF12 lpf12 = LPF12().Q(10).cutoff(400);
-    
+
     Generator outputFilter = inputReader >> lpf12;
-    
+
     synth.setOutputGen(outputFilter);
-        
+    
 }
 
 //--------------------------------------------------------------

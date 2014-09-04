@@ -10,7 +10,7 @@ void ofApp::setup(){
     
     Generator sinTone = SineWave().freq(_fq);
     
-    Generator env = ADSR().attack(0).decay(1).sustain(0).release(0).trigger(_trigger);
+    Generator env = ADSR().attack(0.001).decay(0.2).sustain(0).release(0).trigger(_trigger);
     
     synth.setOutputGen(sinTone * env);
         

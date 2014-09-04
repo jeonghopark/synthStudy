@@ -29,5 +29,9 @@ public:
     void audioReceived(float* input, int bufferSize, int nChannels);
   
     RingBufferWriter inputBuffer;
+    
+    ofSoundStream soundStream;
+    ofSoundStream outSoundStream;
+
 
 };

@@ -1,12 +1,16 @@
 #include "ofApp.h"
 
-
-
-
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    ofSoundStreamSetup(2, 2, this, 44100, 256, 4);
+
+    soundStream.setDeviceID(1);
+    soundStream.setup(this, 0, 2, 44100, 256, 4);
+
+//    outSoundStream.setDeviceID(2);
+//    outSoundStream.setup(this, 2, 0, 44100, 256, 4);
+
+//    soundStream.setup(2, 2, this, 44100, 256, 4);
 
     RingBuffer _inputS;
     inputBuffer = RingBufferWriter("_inputS", 256, 4);
