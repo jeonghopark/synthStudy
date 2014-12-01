@@ -4,6 +4,8 @@
 
 #include "ofxTonic.h"
 
+#define LENGTH 441000
+
 using namespace Tonic;
 
 class ofApp : public ofBaseApp{
@@ -29,5 +31,23 @@ public:
     void audioReceived(float* input, int bufferSize, int nChannels);
   
     RingBufferWriter inputBuffer;
+    
+   
+    ofSoundStream soundStream;
+    ofSoundStream outSoundStream;
+    
+    //
+    float buffer[LENGTH];
+    int recPos;
+    int playPos;
+    bool RMode;
+    bool PMode;
 
+
+    float * _testBuffer;
+    vector<TonicFloat>  fTest;
+    TonicFrames * testTonicFrame;
+    
+    SampleTable tableBuffer;
+    
 };
