@@ -4,14 +4,8 @@
 /**/src
 
 #Whitelist subdirectories
+!/*/src
 !document/*
-!simpleTone/src
-!simpleToneParameter/src
-!simpleToneTrigger/src
-!FM_01/src
-!simpleInput/src
-!simpleInputFilter/src
-!simpleInputReverb/src
 
 
 #Whitelist the gitignore itself
