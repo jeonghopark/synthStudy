@@ -1,15 +1,12 @@
-#Ignore everything
-*/*
-/**/bin/data
-/**/src
+# osx ios
+*.app
+*.mode1v3
+*.pbxuser
+.DS_Store
+build/
+xcuserdata/
+DerivedData/
+project.xcworkspace
 
-#Whitelist subdirectories
-!/*/src
-!document/*
-
-
-#Whitelist the gitignore itself
-!.gitignore
 
 *.mov
-*.icns

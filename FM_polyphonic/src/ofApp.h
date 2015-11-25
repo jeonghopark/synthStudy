@@ -7,8 +7,8 @@
 
 #include "PolySynth.h"
 
-using namespace Tonic;
 
+using namespace Tonic;
 
 class ofApp : public ofBaseApp{
     
