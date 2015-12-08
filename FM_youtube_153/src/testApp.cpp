@@ -95,7 +95,7 @@ void testApp::keyPressedOne(ofKeyEventArgs &key){
 }
 
 
-void testApp::receiveTrigger(float &note){
+void testApp::receiveTrigger(float & note){
     
     noteView = ofMap( note, 0, 127, 0, ofGetHeight() );
 
